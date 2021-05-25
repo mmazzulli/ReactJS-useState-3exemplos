@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html, body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.container{
+  margin: 0 auto;
+  padding-top: 30px;
+  width: 50%;
+  height: 50%;
+  
+  display: grid;
+  grid-template-columns: 2.5fr 1.5fr;
+  grid-template-rows: 2fr 2fr;
+  grid-template-areas: "vid bl1"
+                       "vid bl2";
+  grid-gap: 5px;
+
+  justify-content: center;
+  align-content: center;
+
+}  
+
+.youtube{
+  background-color: blueviolet;
+  /* height: 205px; */
+  grid-area: vid;
+}
+
+.bloco1{
+  background-color: rgb(171, 148, 192);
+  /* height: 100px; */
+  grid-area: bl1;
+}
+
+.bloco2{
+  background-color: rgb(18, 7, 29);
+  /* height: 100px; */
+  grid-area: bl2;
+}
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="youtube"></div>
+        <div class="bloco1"></div>
+        <div class="bloco2"></div>
+    </div>
+
+</body>
+</html>
